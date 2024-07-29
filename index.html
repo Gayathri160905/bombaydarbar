@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/23fdf0a18e.js" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
    
 </head>
 <style>
@@ -170,14 +171,23 @@
             }
         }
 </style>
-<body>
+<body onload="hideLoader()">
+    <!--1111111111-->
+
+
+     <div class="page-loader">
+    <div class="spinner"></div>
+    <div class="txt">Loading...</div>
+</div>
+
+      <!--111111111111111-->
     
     <div class="top_banner fixed-top">
       <div style=" display: flex; align-items: center; flex-direction: column; margin-top: 100px;">
         <h1>Explore exciting tastes of </h1> <br> 
         <img src="./static/logo-removebg-preview-2.png" alt="" class="img-fluid" style="margin: 20px;"> <br> <br>
         <div style="display: flex;">
-            <a href="./static/bombay_darbar_menu-compressed.pdf" style="text-decoration: none; color: white;"><button class="btn btn-one"  ><span>CONTACT US</span></button></a>
+            <a href="./static/bombay_darbar_menu-compressed.pdf" style="text-decoration: none; color: white;"><button class="btn btn-one"  ><span>VIEW MENU</span></button></a>
             
             <a href="#contact" style="text-decoration: none; color: white;"><button class="btn btn-one"  ><span>CONTACT US</span></button></a>
         </div>
@@ -282,7 +292,11 @@
 
 
 
-
+<script>
+function hideLoader(){
+  $('.page-loader').fadeOut('slow');
+}
+</script>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
       
